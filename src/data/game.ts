@@ -2,7 +2,7 @@ export interface Game {
   id: string;
   title: string;
   description: string;
-  category: 'Puzzle' | 'Educational' | 'Fun';
+  category: 'Puzzle' | 'Educational' | 'Fun' | 'Language' | 'Arcade';
   icon: string; // Emoji icon for quick visual ID
   vercelUrl: string;
   color: string; // Tailwind color class for card header/accent
@@ -13,41 +13,51 @@ export const gamesData: Game[] = [
   {
     id: '1',
     title: 'Alphabet Builder',
-    description: '',
-    category: 'Arcade',
-    icon: '🚀',
-    vercelUrl: 'https://find-its-way.vercel.app/', // Replace with your Vercel URL
+    description: 'Help characters find their way while building letters and practicing phonics!',
+    category: 'Educational',
+    icon: '🧩',
+    vercelUrl: 'https://find-its-way.vercel.app/',
     color: 'from-purple-500 to-indigo-600',
-    tags: ['Space', 'Flying', 'High Score'],
+    tags: ['Letters', 'Alphabet', 'Phonics', 'Pathfinder'],
   },
   {
     id: '2',
-    title: 'Math Quiz Quest',
-    description: 'Solve fun math puzzles and level up your math superpowers!',
+    title: 'Alphabet Fun World!',
+    description: 'Guess the hidden words and unlock magical alphabet challenges!',
     category: 'Educational',
-    icon: '🧠',
-    vercelUrl: 'https://your-math-game.vercel.app', // Replace with your Vercel URL
+    icon: '🔤',
+    vercelUrl: 'https://guess-word-games.vercel.app/',
     color: 'from-blue-500 to-cyan-500',
-    tags: ['Math', 'Brain', 'Learning'],
+    tags: ['Word Guess', 'Vocabulary', 'Spelling', 'Brain'],
   },
   {
     id: '3',
-    title: 'Color Matcher',
-    description: 'Test your reaction speed by matching colors before time runs out!',
-    category: 'Puzzle',
-    icon: '🎨',
-    vercelUrl: 'https://your-color-game.vercel.app', // Replace with your Vercel URL
-    color: 'from-pink-500 to-rose-500',
-    tags: ['Colors', 'Speed', 'Puzzle'],
+    title: 'Hindi Homework Helper',
+    description: 'Interactive speaking and vocabulary guide to master Hindi lesson concepts!',
+    category: 'Language',
+    icon: '🗣️',
+    vercelUrl: 'https://speak-hindi-chi.vercel.app/',
+    color: 'from-orange-500 to-amber-500',
+    tags: ['Hindi', 'Speaking', 'Homework', 'Language'],
   },
   {
     id: '4',
-    title: 'Dino Runner',
-    description: 'Jump over obstacles and run as far as you can in this classic arcade game!',
-    category: 'Action',
-    icon: '🦖',
-    vercelUrl: 'https://your-dino-game.vercel.app', // Replace with your Vercel URL
+    title: 'Snake Wiggle Game',
+    description: 'Classic arcade snake fun! Slither around, collect treats, and grow longer.',
+    category: 'Arcade',
+    icon: '🐍',
+    vercelUrl: 'https://snake-wiggle-game.vercel.app/',
     color: 'from-emerald-500 to-teal-600',
-    tags: ['Retro', 'Jumping', 'Runner'],
+    tags: ['Retro', 'Arcade', 'Snake', 'High Score'],
+  },
+  {
+    id: '5',
+    title: 'NCERT Curiosity Lab',
+    description: 'Explore interactive quizzes and fun science experiments from your NCERT topics!',
+    category: 'Educational',
+    icon: '🔬',
+    vercelUrl: 'https://ncert-quiz-app.vercel.app/',
+    color: 'from-rose-500 to-pink-600',
+    tags: ['NCERT', 'Science', 'Quiz', 'School'],
   },
 ];
