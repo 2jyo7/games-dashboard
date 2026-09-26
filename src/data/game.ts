@@ -41,7 +41,17 @@ export const gamesData: Game[] = [
     tags: ['Hindi', 'Speaking', 'Homework', 'Language'],
   },
   {
-    id: '4',
+  id: '4',
+  title: '🐢 Tortoise Race Game',
+  description: 'A skip-counting race! Choose your step size and help the tortoise reach the finish line with your math skills.',
+  category: 'Fun',
+  icon: '🐢',
+  vercelUrl: 'https://tortoise-race.vercel.app/', // Replace with your actual Vercel link
+  color: 'from-emerald-500 to-teal-500', // Green theme matches the tortoise & track theme
+  tags: ['Math', 'Skip Counting', 'Numbers', 'Kids Game'],
+},
+  {
+    id: '5',
     title: 'Snake Wiggle Game',
     description: 'Classic arcade snake fun! Slither around, collect treats, and grow longer.',
     category: 'Arcade',
@@ -51,7 +61,7 @@ export const gamesData: Game[] = [
     tags: ['Retro', 'Arcade', 'Snake', 'High Score'],
   },
   {
-    id: '5',
+    id: '6',
     title: 'NCERT Curiosity Lab',
     description: 'Explore interactive quizzes and fun science experiments from your NCERT topics!',
     category: 'Educational',
